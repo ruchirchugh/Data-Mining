@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #f4f4f4;">
+        <img src="templates/moviestation.png" alt="image">
+
+
+        <center><h1 style="font-family: 'Montserrat', sans-serif; text-shadow: 2px 2px 5px red;"><b>Search Results</b> <br>
+ 
+			<table border="1">#}
+{#                <tr>#}
+{#                  <th>Title</th>#}
+{#                  <th>Plot</th>#}
+{#                  <th>TF/IDF</th>#}
+{#                  <th>Poster</th>#}
+{#                  #}
+{#                </tr>#}
+				<!--<p>{{highlight[0]}}</p>-->
+                {%for i in result%}
+            <div id = "inputText" , style="width:80%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);text-align: center;">
+                <ul type="none" class="list-group">
+                    <li class="list-group-item list-group-item-action list-group-item-danger"><b>Title:</b> {{i[0]}}</li>
+                    <li class="list-group-item list-group-item-action list-group-item-secondary"><b>Overview:</b> {{i[1]}}</li>
+                    <li class="list-group-item list-group-item-action list-group-item-success"><b>Tf-idf Score:</b> {{i[2]}}</li>
+                    <li class="list-group-item list-group-item-action list-group-item-info"><b>Release Date:</b> {{i[3]}}</li>
+                <br>
+                <br>
+                   
+       
+                </ul>
+            </div>
+                {% endfor%}
+{#              </table>#}
+			<button onclick="highlight('Cat')">Highlight</button>
+
+
+<style>
+div {
+  background-color: yellow;
+}
+</style>
+<script>
+function highlight(text) {
+	var inputText = document.getElementById("inputText");
+  var innerHTML = inputText.innerHTML;
+  var index = innerHTML.indexOf(text);
+  if (index >= 0) { 
+   innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
+   inputText.innerHTML = innerHTML;
+  }}
+</script>
+
+    </body>
+</html>
