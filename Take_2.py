@@ -29,9 +29,9 @@ def create_inverted_index(x_data, x_cols):
             insert(index, pre_processing(' '.join(data)))
 
 
-def lemetization(stemmed_data):
-    for sentence in range(stemmed_data):
-        lemetized_data=+sentence
+# def lemetization(stemmed_data):
+#     for sentence in range(stemmed_data):
+#         lemetized_data=+sentence
 
 def pre_processing(data_string):
     tokens = tokenizer.tokenize(data_string)
@@ -145,8 +145,8 @@ def initialize():
     stopword = stopwords.words('english')
     stemmer = PorterStemmer()
     stemmed_data = 10
-    lemetized_data=stemmed_data = 10
-    lemetized_data=lemetization(stemmed_data)
+#     lemetized_data=stemmed_data = 10
+#     lemetized_data=lemetization(stemmed_data)
 
     inverted_index = {}
     document_vector = {}
@@ -160,8 +160,8 @@ def build():
     create_inverted_index(meta_data, meta_cols)
     print("Building doc vector...")
     build_doc_vector()
-    lemetized_data=stemmed_data = 10
-    lemetized_data=lemetization(stemmed_data)
+#     lemetized_data=stemmed_data = 10
+#     lemetized_data=lemetization(stemmed_data)
     print("Built index and doc vector")
 
 def save():
@@ -180,8 +180,8 @@ def eval_score(query):
     # print(query_vector)
     sorted_score_list = cosine_similarity(relevant_docs, query_vector)
     search_result = get_movie_info(sorted_score_list)
-    lemetized_data=stemmed_data = 10
-    lemetized_data=lemetization(stemmed_data)
+#     lemetized_data=stemmed_data = 10
+#     lemetized_data=lemetization(stemmed_data)
 
     #print(search_result[0:5])
     return search_result, processed_query
