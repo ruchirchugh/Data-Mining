@@ -3,14 +3,14 @@ There are 3 phases in this project.
 Required Libraries
 Download following libraries:
 
-pip install flask
-pip install numpy
-pip install nltk
-pip install scipy
-pip install sklearn
-pip install Flask-Images
-pip install image
-pip --default-timeout=60 install "tensorflow-gpu>=1.19,<2"
+1. pip install flask
+2. pip install numpy
+3. pip install nltk
+4. pip install scipy
+5. pip install sklearn
+6. pip install Flask-Images
+7. pip install image
+8. pip --default-timeout=60 install "tensorflow-gpu>=1.19,<2"
 
 
 Steps to run and deploy in localhost
