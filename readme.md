@@ -1,7 +1,6 @@
 There are 3 phases in this project.
 
 Required Libraries
-
 Download following libraries:
 
 pip install flask
@@ -15,7 +14,6 @@ pip --default-timeout=60 install "tensorflow-gpu>=1.19,<2"
 
 
 Steps to run and deploy in localhost
-
 1. Install flask in your environment.
 2. Download this repo to a folder
 3. Navigate upto the 'app' directory
@@ -23,8 +21,8 @@ Steps to run and deploy in localhost
 5. Hit **localhost:5000** in browser.
 
 
-Main.py can be used to run the two pythons files.
-one is for tf-idf and other is for classification
+**Main.py** can be used to run the two pythons files. One is for tf-idf and other is for classification.
+Keep the pickle files with the main folder to get the fast results
 
 
 References:
