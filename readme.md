@@ -23,8 +23,8 @@ Steps to run and deploy in localhost
 5. Hit **localhost:5000** in browser.
 
 
-Main.py can be used to run the three pythons files.
-The files are stored in the folder named extra. just copy them to root folder before running
+Main.py can be used to run the two pythons files.
+one is for tf-idf and other is for classification
 
 
 References:
