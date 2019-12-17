@@ -1,7 +1,30 @@
 There are 3 phases in this project.
 
+Required Libraries
+
+Download following libraries:
+
+pip install flask
+pip install numpy
+pip install nltk
+pip install scipy
+pip install sklearn
+pip install Flask-Images
+pip install image
+pip --default-timeout=60 install "tensorflow-gpu>=1.19,<2"
+
+
+Steps to run and deploy in localhost
+
+1. Install flask in your environment.
+2. Download this repo to a folder
+3. Navigate upto the 'app' directory
+4. from a console run the app.py file by the command **python app.py**
+5. Hit **localhost:5000** in browser.
+
+
 Main.py can be used to run the three pythons files.
-The files are stored in the folder named extra.
+The files are stored in the folder named extra. just copy them to root folder before running
 
 
 References:
