@@ -24,6 +24,8 @@ Steps to run and deploy in localhost
 **Main.py** can be used to run the two pythons files. One is for tf-idf and other is for classification.
 Keep the pickle files with the main folder to get the fast results
 
+Clone the repository : $ git clone --bare https://github.com/ruchirchugh/Data-Mining.git
+
 
 References:
 
