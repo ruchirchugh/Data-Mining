@@ -4,7 +4,9 @@ Required Libraries
 Download following libraries:
 
 pip install flask
+
 pip install numpy
+
 pip install nltk
 pip install scipy
 pip install sklearn
